@@ -90,7 +90,7 @@ namespace DotNetKoans.CSharp
 
         //But it is required for Extension Methods, since it needs
         //an instance variable. So this wouldn't work, giving a
-        //compile-time error:
+        //compile-time error:     
         //Assert.Equal(FILL_ME_IN, MethodWithVariableArguments("Cory", "Will", "Corey"));
 
         class InnerSecret
