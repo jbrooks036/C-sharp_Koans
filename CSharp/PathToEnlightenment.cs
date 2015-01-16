@@ -12,12 +12,18 @@
 				"DotNetKoans.CSharp.AboutArrays",
 				"DotNetKoans.CSharp.AboutArrayAssignment",
 				"DotNetKoans.CSharp.AboutStrings",
+
 				"DotNetKoans.CSharp.AboutInheritance",
 				"DotNetKoans.CSharp.AboutMethods",
-				"DotNetKoans.CSharp.AboutControlStatements",
+                "DotNetKoans.CSharp.AboutControlStatements",
+                // Sonnet #1: Love Song TO Numbers (Fri)
 				"DotNetKoans.CSharp.AboutGenericContainers",
+                // Epic #1:  Shapes and Colors (Mon)
+                // Epic #2:  SinglyLinkedList (Wed)
 				"DotNetKoans.CSharp.AboutDelegates",
 				"DotNetKoans.CSharp.AboutLambdas"
+                // Epic #3: cal (Fri)
+                // Implement cal (1 week, max)
                 };
             }
         }
