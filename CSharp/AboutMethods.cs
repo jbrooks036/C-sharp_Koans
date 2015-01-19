@@ -7,6 +7,9 @@ namespace DotNetKoans.CSharp
 {
     public static class ExtensionMethods
     {
+        // "this" parameter translates to "this.HelloWorld" 
+        // since .NET source is closed, can't add to System classes; use Extension instead
+        // ExtensionMethods.HelloWorld(myKoan); => this.HelloWorld(); 
         public static string HelloWorld(this Koan koan)
         {
             return "Hello!";
