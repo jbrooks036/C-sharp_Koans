@@ -23,25 +23,29 @@ namespace DotNetKoans.CSharp
 			{
 				return lhs + rhs;
 			}
+            // WHY is Subtract "static", but Add not???!?!?
 			public static int Subtract(int lhs, int rhs)
 			{
 				return lhs - rhs;
 			}
 		}
+
 		[Koan(1)]
 		public void DelegatesAreReferenceTypes()
 		{
 			//If you don't initialize a delegate it will be a null value, just as any other refrence type.
 			BinaryOp op;
-			Assert.Null(FILL_ME_IN);
+			Assert.Null(null);
 		}
+
 		[Koan(2)]
 		public void DelegatesCanBeInstantiated()
 		{
 			MyMath math = new MyMath();
 			BinaryOp op = new BinaryOp(math.Add);
-			Assert.Equal(FILL_ME_IN, op.Method.Name);
+			Assert.Equal(int MyMath.Add(int, int), op.Method.Name);
 		}
+
 		[Koan(3)]
 		public void DelegatesCanBeAssigned()
 		{
@@ -49,12 +53,14 @@ namespace DotNetKoans.CSharp
 			BinaryOp op = math.Add;
 			Assert.Equal(FILL_ME_IN, op.Method.Name);
 		}
+
 		[Koan(4)]
 		public void DelegatesCanReferenceStaticMethods()
 		{
 			BinaryOp op = MyMath.Subtract;
 			Assert.Equal(FILL_ME_IN, op.Method.Name);
 		}
+
 		[Koan(5)]
 		public void MethodsCalledViaDelegate()
 		{
@@ -66,6 +72,7 @@ namespace DotNetKoans.CSharp
 		{
             Assert.Equal(FILL_ME_IN, passed(3,3));
         }
+
 		[Koan(6)]
 		public void DelegatesCanBePassed()
 		{
@@ -73,12 +80,14 @@ namespace DotNetKoans.CSharp
 			BinaryOp op = math.Add;
 			PassMeTheDelegate(op);
 		}
+
 		[Koan(7)]
 		public void MethodCanBePassedDirectly()
 		{
 			MyMath math = new MyMath();
 			PassMeTheDelegate(math.Add);
 		}
+
 		[Koan(8)]
 		public void DelegatesAreImmutable()
 		{
@@ -103,6 +112,7 @@ namespace DotNetKoans.CSharp
 				return x + 10;
 			}
 		}
+
 		[Koan(9)]
 		public void DelegatesHaveAnInvocationList()
 		{
